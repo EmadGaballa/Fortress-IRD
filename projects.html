@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fortress Investment & Real Estate Development</title>
+
+
+<!-- Favicon -->
+<link rel="icon" href="photos/favicon/favicon.ico" sizes="any">
+
+<link rel="icon" type="image/png" sizes="32x32" href="photos/favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="photos/favicon/favicon-16x16.png">
+
+<link rel="apple-touch-icon" sizes="180x180" href="photos/favicon/apple-touch-icon.png">
+
+<link rel="manifest" href="photos/favicon/site.webmanifest">
+
+<!-- Android Chrome -->
+<link rel="icon" type="image/png" sizes="192x192" href="photos/favicon/android-chrome-192x192.png">
+<link rel="icon" type="image/png" sizes="512x512" href="photos/favicon/android-chrome-512x512.png">
+
+
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="responsive.css">
+
+  <!-- EmailJS SDK -->
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <script defer src="script.js"></script>
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <!-- ================= LOADER ================= -->
+  <div id="loader"></div>
+
+  <!-- ================= NAVBAR ================= -->
+  <div class="headerVideo" id="mainHeader">
+    <div class="logoVideo">
+      <a href="index.html">
+        <img src="photos/3.jpg" alt="Fortress IRD Logo">
+      </a>
+    </div>
+
+    <!-- Desktop nav -->
+    <div class="nav-area">
+      <nav class="nav-links">
+        <a href="index.html"          data-en="Home"     data-ar="الرئيسية">Home</a>
+        <a href="index.html#about"    data-en="About"    data-ar="من نحن">About</a>
+        <a href="index.html#services" data-en="Services" data-ar="خدماتنا">Services</a>
+        <a href="projects.html"       data-en="Projects" data-ar="المشاريع" class="active">Projects</a>
+        <a href="index.html#contact"  data-en="Contact"  data-ar="اتصل بنا">Contact</a>
+      </nav>
+      <button id="langToggle">عربي</button>
+    </div>
+
+    <!-- Hamburger button (mobile only) -->
+    <button class="hamburger" aria-label="Open navigation menu" aria-expanded="false">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </div>
+
+  <!-- ================= MOBILE NAV OVERLAY ================= -->
+  <div class="mobile-menu-overlay" aria-hidden="true"></div>
+
+  <!-- ================= MOBILE NAV DRAWER ================= -->
+  <nav class="mobile-nav" role="navigation" aria-label="Mobile navigation" aria-hidden="true">
+
+    <div class="mobile-nav-header">
+      <img class="mobile-nav-logo" src="photos/3.jpg" alt="Fortress IRD Logo">
+      <button class="mobile-nav-close" aria-label="Close navigation menu">&#x2715;</button>
+    </div>
+
+    <div class="mobile-nav-links">
+      <a href="index.html"          data-en="Home"     data-ar="الرئيسية">Home     <span class="nav-arrow">&#8594;</span></a>
+      <a href="index.html#about"    data-en="About"    data-ar="عننا">About    <span class="nav-arrow">&#8594;</span></a>
+      <a href="index.html#services" data-en="Services" data-ar="خدماتنا">Services <span class="nav-arrow">&#8594;</span></a>
+      <a href="projects.html"       data-en="Projects" data-ar="المشاريع" class="active">Projects <span class="nav-arrow">&#8594;</span></a>
+      <a href="index.html#contact"  data-en="Contact"  data-ar="اتصل بنا">Contact  <span class="nav-arrow">&#8594;</span></a>
+    </div>
+
+    <div class="mobile-nav-footer">
+      <button class="mobile-lang-toggle">عربي / English</button>
+    </div>
+
+  </nav>
+
+  <!-- ================= MAIN CONTENT ================= -->
+  <main>
+    <section id="project-video-showcase">
+      <div class="container">
+
+        <h2 data-en="Our Current Projects"
+            data-ar="مشاريعنا الحالية">
+          Our Current Projects
+        </h2>
+
+        <div class="video-wrapper">
+          <video id="projectVideo" controls poster="photos/4.png" playsinline>
+            <source src="videos/1.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </div>
+
+        <p class="video-description"
+           data-en="Discover the precision and quality in our recent development. This video highlights key features and our commitment to excellence."
+           data-ar="اكتشف الدقة والجودة في تطويراتنا الأخيرة. يسلط هذا الفيديو الضوء على الميزات الرئيسية والتزامنا بالتميز.">
+          Discover the precision and quality in our recent development. This video highlights key features and our
+          commitment to excellence.
+        </p>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="cinematic-footer">
+    <div class="footer-grid">
+
+      <div class="footer-col footer-brand">
+        <h3 data-en="Fortress Investment & Real Estate Development"
+            data-ar="فورتريس للاستثمار والتطوير العقاري">
+          Fortress Investment & Real Estate Development
+        </h3>
+        <p data-en="Quality • Trust • Innovation"
+           data-ar="الجودة • الثقة • الابتكار">
+          Quality • Trust • Innovation
+        </p>
+        <p class="footer-mission"
+           data-en="Building the future, one luxurious project at a time. Dedicated to excellence in construction, development, and finishing."
+           data-ar="بناء المستقبل، مشروع فاخر في كل مرة. مكرسة للتميز في البناء والتطوير والتشطيب.">
+          Building the future, one luxurious project at a time.
+          Dedicated to excellence in construction, development, and finishing.
+        </p>
+      </div>
+
+      <div class="footer-col footer-links">
+        <h4 data-en="Quick Links" data-ar="روابط سريعة">Quick Links</h4>
+        <ul>
+          <li><a href="index.html#home"     data-en="Home"     data-ar="الرئيسية">Home</a></li>
+          <li><a href="index.html#about"    data-en="About Us" data-ar="عننا">About Us</a></li>
+          <li><a href="index.html#services" data-en="Services" data-ar="خدماتنا">Services</a></li>
+          <li><a href="projects.html"       data-en="Projects" data-ar="المشاريع">Projects</a></li>
+          <li><a href="index.html#contact"  data-en="Contact"  data-ar="اتصل بنا">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col footer-contact">
+        <h4 data-en="Contact Us" data-ar="اتصل بنا">Contact Us</h4>
+        <p>
+          <span class="contact-icon">&#x1F4CD;</span>
+          <a data-en="3'Sixty By LMD, New Cairo, Cairo Governorate, 11865."
+             data-ar="360 LMD، القاهرة الجديدة، محافظة القاهرة، 11865."
+             href="https://maps.app.goo.gl/x1GRxJGtSS6hEhHFA" target="_blank">
+            3'Sixty By LMD, New Cairo, Cairo Governorate, 11865.
+          </a>
+        </p>
+        <p>
+          <span class="contact-icon">&#x260E;</span>
+          <a href="tel:+201273773339">+20 12 73773339</a>
+          &nbsp;/&nbsp;
+          <a href="tel:+201033701747">+20 10 33701747</a>
+        </p>
+        <p>
+          <span class="contact-icon">&#x2709;</span>
+          <a href="https://mail.google.com/mail/?view=cm&fs=1&to=fortress.ird@gmail.com" target="_blank">
+            fortress.ird@gmail.com
+          </a>
+        </p>
+
+        <div class="footer-col footer-social">
+          <div class="social-icons">
+            <a href="https://www.instagram.com/fortress.ird/" target="_blank" aria-label="Instagram">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+              </svg>
+            </a>
+            <a href="https://www.facebook.com/Fortress.IRD" target="_blank" aria-label="Facebook">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      <div class="credits-group">
+        <p class="developer-info-signature"
+           data-en="Crafted with precision by Eng. Emad M. Gaballa"
+           data-ar="تم إعداد هذا العمل بدقة على يد المهندس عماد م. جاب الله">
+          Crafted with precision by
+          <a href="https://www.linkedin.com/in/emadgaballa/" target="_blank" class="developer-credit">
+            Eng. Emad M. Gaballa
+          </a>
+        </p>
+        <span class="info-divider">|</span>
+        <span class="work-inquiries-info"
+              data-en="For Work Inquiries:"
+              data-ar="للاستفسارات العملية:">For Work Inquiries:</span>
+        <span class="contact-link-item">
+          <span class="contact-icon">&#x2709;</span>
+          <a href="https://mail.google.com/mail/?view=cm&fs=1&to=emad.m.gaballa@gmail.com"
+             class="developer-contact-link" target="_blank">emad.m.gaballa@gmail.com</a>
+        </span>
+        <span class="info-divider">|</span>
+        <span class="contact-link-item">
+          <span class="contact-icon">&#x260E;</span>
+          <a href="tel:+201210048828" class="developer-contact-link">+20 1210048828</a>
+          &nbsp;/&nbsp;
+          <a href="tel:+201033701747" class="developer-contact-link">+20 10 33701747</a>
+        </span>
+      </div>
+      <p class="copyright-text"
+         data-en="© 2026 Fortress IRD. All rights reserved."
+         data-ar="© 2026 فورتريس. جميع الحقوق محفوظة.">
+        &copy; 2026 Fortress IRD. All rights reserved.
+      </p>
+    </div>
+  </footer>
+
+</body>
+</html>
